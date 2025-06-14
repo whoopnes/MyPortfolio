@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("./fonts/MYRIADPRO-REGULAR.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("./fonts/MYRIADPRO-BOLD.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("./fonts/MYRIADPRO-SEMIBOLDIT.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./fonts/Gotham Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px; /* Adjust based on navbar height */
+}
+
+body {
+  margin: 0;
+  /* padding: 0;
+  overflow-x:hidden; */
+  font-family: "Myriad Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.font-gotham {
+  font-family: "Gotham", sans-serif;
+  font-weight: 900;
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.font-myriad-semibold-it {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* App container to eliminate gaps */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* Hero section specific styles */
+.hero-section {
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Ensure no gap between navbar and content */
+header {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Force the hero section to start immediately after navbar */
+header + section,
+header + div > section:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Smooth section transitions */
+section {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Remove default section margins */
+section + section {
+  margin-top: 0;
+}
+
+/* Special container for collaborator and prize sections */
+.collaborator-prize-container {
+  background-color: #ffffff;
+}
+
+/* Reduce spacing between collaborator and prize sections */
+.collaborator-prize-container section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.collaborator-prize-container section:first-child {
+  padding-top: 4rem;
+}
+
+.collaborator-prize-container section:last-child {
+  padding-bottom: 4rem;
+}
+
+/* Remove bottom margin from collaborator section */
+#collaborator .container h2 {
+  margin-bottom: 2rem;
+}
+
+/* Reduce top margin for prize section heading */
+#prize .container h2 {
+  margin-top: 0;
+}
+
+/* Ensure no gap between navbar and hero */
+#hero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Ensure the wave separator connects properly */
+#hero svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
