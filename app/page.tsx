@@ -177,7 +177,7 @@ export default function Home() {
               animateBy="words"
             />
             <a
-              href="/Agnes Julia Purnomo_CV.pdf"
+              href="/CV_Agnes Julia Purnomo.pdf"
               download
               className="inline-block px-6 md:px-8 py-3 text-lg md:text-xl rounded-2xl font-semibold shadow transition backdrop-blur-sm bg-white/10 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 border border-white/20"
             >
