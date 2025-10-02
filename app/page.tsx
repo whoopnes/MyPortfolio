@@ -26,8 +26,8 @@ export default function Home() {
       fullDesc: "Verdicto is a website designed to connect people directly with lawyers. This project was inspired by the fact that many legal cases go unresolved because of limited access to legal professionals, often only gaining attention once they become viral. To address this gap, my team and I developed Verdicto as a platform where individuals can easily search for and reach out to lawyers, making legal support more accessible and efficient. I was responsible for the Front-End development, ensuring a user-friendly and responsive design.",
       tech: ["HTML", "CSS"],
       image: "/verdicto.jpg",
-      demoUrl: "https://drive.google.com/file/d/1e8SoeYr2xsarqnEGmkE1pvYVEkmoC2Q6/view?usp=sharing", // Replace with your actual demo URL
-      codeUrl: "" // Replace with your actual GitHub URL
+      demoUrl: "https://drive.google.com/file/d/1e8SoeYr2xsarqnEGmkE1pvYVEkmoC2Q6/view?usp=sharing", 
+      codeUrl: ""
     },
     {
       id: 3,
@@ -36,8 +36,8 @@ export default function Home() {
       fullDesc: "SIGAP (Smart Identification & Guarding Alert Platform) is a security-focused website designed to detect anomalies and perform real-time face recognition. Together with my team, we decided to develop SIGAP to support authorities or individuals who require high-level security by identifying suspicious movements and recognizing faces instantly. In this project, I was responsible for developing the face recognition feature. I built a pipeline that integrates YOLOv8 for face detection with FaceNet for face embedding extraction, enabling the system to detect faces and generate unique feature vectors in real time. My tasks included preparing and labeling the dataset for YOLOv8 training, training and evaluating the detection model, and implementing the embedding generation process for detected faces. The model has 0.875 in mAP50, 0.744 in mAP50-95, 0.986 in precision, and 0.843 in recall",
       tech: ["Python", "Python Notebook", "YOLO v8"],
       image: "/SIGAP.jpg",
-      demoUrl: "", // Replace with your actual demo URL
-      codeUrl: "https://www.kaggle.com/code/agnesjulia/yolov8-facenet" // Replace with your actual GitHub URL
+      demoUrl: "", 
+      codeUrl: "https://www.kaggle.com/code/agnesjulia/yolov8-facenet" 
     },
     {
       id: 4,
@@ -46,8 +46,8 @@ export default function Home() {
       fullDesc: "I actively practice coding on HackerRank to strengthen my problem-solving and technical skills. Along the way, I earned the SQL Basic and SQL Intermediate certifications, showcasing my ability to write and optimize database queries. Beyond SQL, I am currently learning Java and planning to pursue additional certifications. I enjoy continuous learning and consistently seek opportunities to expand my knowledge and expertise in programming.",
       tech: ["SQL", "Java", "Python"],
       image: "/Hackerrank.jpg",
-      demoUrl: "https://www.hackerrank.com/profile/agnesjulia53", // Replace with your actual portfolio URL
-      codeUrl: "https://www.hackerrank.com/profile/agnesjulia53" // Replace with your actual GitHub URL
+      demoUrl: "https://www.hackerrank.com/profile/agnesjulia53", 
+      codeUrl: "https://www.hackerrank.com/profile/agnesjulia53" 
     }
   ];
 
@@ -177,7 +177,7 @@ export default function Home() {
               animateBy="words"
             />
             <a
-              href="/CV_Agnes Julia Purnomo.pdf"
+              href="/Agnes Julia Purnomo_CV.pdf"
               download
               className="inline-block px-6 md:px-8 py-3 text-lg md:text-xl rounded-2xl font-semibold shadow transition backdrop-blur-sm bg-white/10 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 border border-white/20"
             >
