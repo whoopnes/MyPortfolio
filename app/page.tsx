@@ -35,7 +35,7 @@ export default function Home() {
       shortDesc: "Smart Identification & Guarding Alert Platform",
       fullDesc: "SIGAP (Smart Identification & Guarding Alert Platform) is a security-focused website designed to detect anomalies and perform real-time face recognition. Together with my team, we decided to develop SIGAP to support authorities or individuals who require high-level security by identifying suspicious movements and recognizing faces instantly. In this project, I was responsible for developing the face recognition feature. I built a pipeline that integrates YOLOv8 for face detection with FaceNet for face embedding extraction, enabling the system to detect faces and generate unique feature vectors in real time. My tasks included preparing and labeling the dataset for YOLOv8 training, training and evaluating the detection model, and implementing the embedding generation process for detected faces. The model has 0.875 in mAP50, 0.744 in mAP50-95, 0.986 in precision, and 0.843 in recall",
       tech: ["Python", "Python Notebook", "YOLO v8"],
-      image: "/SIGAP.jpg",
+      image: "/SIGAP.png",
       demoUrl: "", 
       codeUrl: "https://www.kaggle.com/code/agnesjulia/yolov8-facenet" 
     },
@@ -48,6 +48,16 @@ export default function Home() {
       image: "/Hackerrank.jpg",
       demoUrl: "https://www.hackerrank.com/profile/agnesjulia53", 
       codeUrl: "https://www.hackerrank.com/profile/agnesjulia53" 
+    },
+    {
+      id: 5,
+      title: "Business Consulting",
+      shortDesc: "Start-Up Project Lindungi Hutan",
+      fullDesc: "As part of the DWDG program’s real startup project, I contributed to addressing key challenges faced by Lindungi Hutan such as suboptimal marketing, low donor retention, and limited community engagement. My work primarily focused on Strategy 3: Building Sustainable Donor Loyalty through Ambassador Engagement, supported by research on Digital Marketing & Branding Performance and Community Engagement. I conducted PESTLE analysis, assessed risks and mitigation plans, and contributed to financial projections to ensure the strategy’s feasibility and sustainability. Using data from Lindungi Hutan’s website and social media platforms, I carried out in-depth research and participated in brainstorming sessions to develop data-driven strategies and creative ideas that strengthen Lindungi Hutan’s online presence and foster a loyal, engaged donor community.",
+      tech: ["Canva", "Google Docs", "Excel"],
+      image: "/Consulting.png",
+      demoUrl: "", 
+      codeUrl: "" 
     }
   ];
 
@@ -338,7 +348,7 @@ export default function Home() {
                 {/* Action Buttons */}
                 <div className="flex gap-4">
                   {projects[selectedProject].id === 4 ? (
-                    // Special button for the last project (Portfolio Website)
+                    // Special button for the HackerRank project
                     <a
                       href="https://www.hackerrank.com/profile/agnesjulia53"
                       className="inline-block px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300"
@@ -349,6 +359,34 @@ export default function Home() {
                         speed={4}
                       />
                     </a>
+                  ) : projects[selectedProject].id === 5 ? (
+                    // Special buttons for Business Consulting project
+                    <>
+                      <a
+                        href="https://drive.google.com/file/d/1rPD65cGmuI7XcwlvlvIWIZljtxg2AaIM/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300"
+                      >
+                        <ShinyText 
+                          text="Pitch Deck"
+                          className="text-white"
+                          speed={4}
+                        />
+                      </a>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1fMC6oqV3dM3mYEiGA7QWh99XaxoobjzB/edit?usp=drive_link&ouid=112640418038045612228&rtpof=true&sd=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300"
+                      >
+                        <ShinyText 
+                          text="Financial Projections"
+                          className="text-white"
+                          speed={4}
+                        />
+                      </a>
+                    </>
                   ) : (
                     // Regular buttons for other projects
                     <>
