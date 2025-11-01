@@ -378,7 +378,6 @@ export default function Home() {
                 {/* Action Buttons */}
                 <div className="flex gap-4">
                   {projects[selectedProject].id === 4 ? (
-                    // Special button for the HackerRank project
                     <a
                       href="https://www.hackerrank.com/profile/agnesjulia53"
                       className="inline-block px-6 py-3 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300"
@@ -418,7 +417,6 @@ export default function Home() {
                       </a>
                     </>
                   ) : (
-                    // Regular buttons for other projects
                     <>
                       {projects[selectedProject].demoUrl && (
                         <a
@@ -504,7 +502,6 @@ export default function Home() {
               <motion.button
                 onClick={() => {
                   navigator.clipboard.writeText('agnesjuliaap@gmail.com');
-                  // You could add a toast notification here
                   alert('Email copied to clipboard!');
                 }}
                 className="flex items-center gap-4 px-8 py-4 backdrop-blur-sm bg-white/10 border border-white/20 rounded-2xl hover:bg-white/20 transition-all duration-300 group w-full md:w-auto justify-center md:justify-start cursor-pointer"
@@ -537,7 +534,7 @@ export default function Home() {
               </motion.a>
             </div>
             
-            {/* Optional: Additional contact info */}
+            {/* Additional contact info */}
             <div className="mt-12 pt-8 border-t border-white/20 text-center">
               <p className="text-white/60 text-sm">
                 Based in Indonesia • Available for remote opportunities
