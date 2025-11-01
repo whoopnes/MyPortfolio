@@ -65,7 +65,7 @@ export default function Home() {
       shortDesc: "Book Recommendation System",
       fullDesc: "Developed the LiberAI book recommendation model, exploring the complete end-to-end development process. The project involved building a content-based recommendation system through stages including data cleaning and preprocessing, TF-IDF vectorization of genres, authors, and descriptions, dimensionality reduction using TruncatedSVD, and book clustering with KMeans. The model further utilized cosine similarity to generate personalized recommendations, resulting in an efficient and interpretable system for discovering related books.",
       tech: ["Python Notebook", "Machine Learning", "Data Preprocessing"],
-      image: "/LiberAI.png",
+      image: "/liberAI.png",
       demoUrl: "https://liberai.streamlit.app/",
       codeUrl: "https://github.com/whoopnes/LiberAI.git"
     },
@@ -75,17 +75,17 @@ export default function Home() {
       shortDesc: "Fruit Recognition",
       fullDesc: "Developed *Fruity Nutrition*, an integrated deep learning and web-based system designed for fruit recognition and nutritional analysis. The project combines a Convolutional Neural Network (CNN) using transfer learning with ResNet50V2, trained on augmented fruit images to classify 10 different fruit types with high accuracy. I was responsible for building and optimizing the Streamlit front-end interface, creating a smooth and interactive user experience where users can upload or capture fruit images directly through the app. Once the image is processed and classified by the model, the interface automatically retrieves and displays key nutritional information such as energy, protein, vitamins, and minerals from an integrated dataset. The result is an accessible, educational platform that seamlessly connects AI-powered fruit recognition with practical nutrition insights.",
       tech: ["Python Notebook", "Computer Vision", "CNN ResNet-50"],
-      image: "/FruityNutrition.png",
+      image: "/fruityNutrition.png",
       demoUrl: "https://drive.google.com/file/d/11b1mrVIxBAX3f7-YaXbpfThtZdYt4f76/view?usp=drivesdk",
       codeUrl: "https://github.com/whoopnes/Fruity_Nutrition.git"
     },
     {
-      id: 7,
+      id: 8,
       title: "Fruity Nutrition Similarity",
       shortDesc: "Fruit Recognition",
       fullDesc: "Developed a Natural Language Processing (NLP) based system that identifies and compares the similarity of health benefits between different fruits and vegetables. The project aims to help users discover alternative produce items with comparable nutritional or health effects. Using a dataset containing fruit and vegetable names alongside their described health benefits, the system applies text preprocessing, TF-IDF vectorization, and sentence embeddings to measure both lexical and semantic similarity. I built the interactive program interface, enabling users to compare two items or find the top five fruits or vegetables with the most similar health benefits. This solution helps users make informed dietary choices by easily identifying nutritious alternatives.",
       tech: ["Python Notebook", "NLP", "Text Preprocessing"],
-      image: "/FruitSimilarity.png",
+      image: "/fruitSimilarity.png",
       demoUrl: "https://drive.google.com/file/d/16XnyWuCpzT2xkiuJ-dMvwzxNuhW_zjuN/view?usp=sharing",
       codeUrl: "https://github.com/NidyaH/Fruit-and-Vegetables-Nutrition-Similarity-NLP.git"
     },
